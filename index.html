@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello copy</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Workspace</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+
+        <div class="itemsContainer" draggable="true">
+            <div class="topContainer">
+                <h2>Current</h2>
+                <button class="deleteContainerBtn">x</button>
+            </div>
+            <ul></ul>
+            <button class="addItemsBtn">Add an item</button>
+            <form autocomplete="off">
+                <div class="topFormContainer">
+                    <label for="item">Add a new item</label>
+                    <button type="button" class="closeFormBtn">x</button>
+                </div>
+                <input type="text" id="item"/>
+                <span class="ValideMsg"></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="itemsContainer" draggable="true">
+            <div class="topContainer">
+                <h2>To Do</h2>
+                <button class="deleteContainerBtn">x</button>
+            </div>
+            <ul></ul>
+            <button class="addItemsBtn">Add an item</button>
+            <form autocomplete="off">
+                <div class="topFormContainer">
+                    <label for="item">Add a new item</label>
+                    <button type="button" class="closeFormBtn">x</button>
+                </div>
+                <input type="text" id="item"/>
+                <span class="ValideMsg"></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="itemsContainer" draggable="true">
+            <div class="topContainer">
+                <h2>Finish</h2>
+                <button class="deleteContainerBtn">x</button>
+            </div>
+            <ul></ul>
+            <button class="addItemsBtn">Add an item</button>
+            <form autocomplete="off">
+                <div class="topFormContainer">
+                    <label for="item">Add a new item</label>
+                    <button type="button" class="closeFormBtn">x</button>
+                </div>
+                <input type="text" id="item"/>
+                <span class="ValideMsg"></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="addNewContainer">
+            <button class="addContainerBtn"> Add Container</button>
+            <form autocomplete="true">
+                <div class="topFormContainer">
+                    <label for="NewContainer">Add a new Container</label>
+                    <button type="button" class="closeFormBtn closeList">x</button>
+                </div>
+                <input type="text" id="NewContainer" />
+                <span class="ValideMsg"></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+    <script  src = "../scripts/app.js"></script>
+</body>
+    
+
+
+</html>

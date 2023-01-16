@@ -1,0 +1,157 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: darkmagenta;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    padding: 60px 20px 0;
+}
+
+.itemsContainer {
+    flex-shrink: 0;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: move;
+    align-self: flex-start;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topContainer button,
+li button {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+}
+
+.items {
+    padding: 15px 5px;
+    margin: 10px 0;
+    background-color: wheat;
+    box-shadow: 0 4px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.addItemsBtn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+form {
+    display: none;
+    padding: 5px;
+    position: relative;
+}
+
+.topFormContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main form label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.main form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.ValideMsg {
+    display: block;
+    color: rgb(166, 3, 3);
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.closeFormBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+
+}
+
+button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+/* add new container  */
+
+.addNewContainer {
+    flex-shrink: 0;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border-radius: 3px;
+    margin: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.addContainerBtn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    font-size: 16px;
+}
